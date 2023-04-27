@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.signUpContainer {
+.signInContainer {
   width: 500px;
   height: 500px;
   border-radius: 12px;
@@ -70,7 +70,7 @@
     align-items: center;
   } */
 
-.signup {
+.signin {
   width: 250px;
   height: 45px;
   margin: 10px;

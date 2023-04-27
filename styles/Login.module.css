@@ -52,9 +52,10 @@ grid-template-columns: repeat(12, 1fr);
 
 .signup{
   color: white;
-  background-color: #15202b;
+  background-color: #3e9af0;
   border: solid 1px rgb(166, 168, 220);
   border-radius: 30px;
+  border: solid 1px #3e9af0;
   padding: 5% 20%;
   font-size: large;
   font-weight: 800;
@@ -63,10 +64,9 @@ grid-template-columns: repeat(12, 1fr);
 
 .signin{
   color: white;
-  background-color: #3e9af0;
+  background-color: #15202b;
   border: solid 1px rgb(166, 168, 220);
   border-radius: 30px;
-  border: solid 1px #3e9af0;
   padding: 5% 20%;
   font-size: large;
   font-weight: 800;
