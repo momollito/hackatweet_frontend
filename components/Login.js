@@ -13,7 +13,7 @@ const [openSignup, setOpenSignup] = useState(false)
 
   const handleSignup = () => {
 return (
-  <Signup />
+  <Signup open={openSignup} />
 )
   }
 
@@ -31,11 +31,11 @@ return (
         <h2 className={styles.h2}>Join Hackatweet today.</h2>
         <div className={styles.registerContainer}>
 				<div className={styles.registerSection}>
-					<button id="register" className={styles.signin} >Signin</button>
+					<button id="signin" className={styles.signin} >Signin</button>
 				</div>
 				<div className={styles.registerSection}>
         <p className={styles.p}>Already have an account ?</p>
-					<button id="connection" className={styles.signup} onClick={() => handleSignup()} >Signup</button>
+					<button id="signup" className={styles.signup} onClick={() => handleSignup()} >Signup</button>
 				</div>
 			</div>
       </div>
