@@ -1,14 +1,15 @@
 import styles from '../styles/Home.module.css';
+import Login from './Login';
 
 function Home() {
+
+const login = <Login />
+
+
   return (
-    <div>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-      </main>
-    </div>
+   <>
+   {login}
+   </>
   );
 }
 
