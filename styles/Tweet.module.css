@@ -1,6 +1,13 @@
-.tweet{
 
-    display: flex;
-    flex-direction: column;
+
+.tweet {
+    background-color: #3E92CC;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 90%;
+	margin: 20px;
+    padding: 10px;
+    border-radius: 15px;
+
 }
-
