@@ -2,12 +2,16 @@ import styles from '../styles/Signin.module.css';
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { signup } from '../reducers/user';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import Link from 'next/link';
+
 
 
 const Signin = ({closeSignin}) => {
 const [signInUsername, setSignInUsername] = useState('')
 const [signInPassword, setSignInPassword] = useState('')
+const user = useSelector((state) => state.user.value);
+
 const dispatch = useDispatch();
 
 
@@ -24,7 +28,6 @@ const handleSignin = () => {
                 dispatch(signup({ username: signInUsername, token: data.token }));
                 setSignInUsername('');
                 setSignInPassword('');
-                closeSignin(false)           
             }
         });
 };
@@ -44,7 +47,7 @@ const handleSignin = () => {
 		<input className={styles.input} type="password" placeholder="Password" id="signInPassword" onChange={(e) => setSignInPassword(e.target.value)} value={signInPassword} />
         </div>
         {/* <div classname={styles.footer}> */}
-        <button id="signin" className={styles.signin} onClick={() => handleSignin()} >Signin</button>
+        <button id="signin" className={styles.signin} onClick={() => handleSignin()}>Signin</button>
         {/* </div> */}
         </div>
         </div>
