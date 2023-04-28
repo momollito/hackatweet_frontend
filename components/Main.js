@@ -19,7 +19,7 @@ function Main() {
       value={inputValue}
     ></input>
   );
-  const inputLength = inputValue.length + "/ 280";
+  const inputLength = <span className={styles.tweetlength}>{inputValue.length} / 280</span>
 
   function handleTweetClick() {
     if (inputValue.length > 0) {
@@ -61,9 +61,9 @@ function Main() {
         <div className={styles.newtweet}>
           <h1 className={styles.hometitle}>Home</h1>
           {input}
-          <div className={styles.button_lenght}>
-            <span>{inputLength}</span>
-            <Button onClick={() => handleTweetClick()}>Tweet</Button>
+          < div className={styles.button_lenght}>
+            {inputLength}
+            <Button type="primary" onClick={() => handleTweetClick()}>Tweet</Button>
           </div>
         </div>
         {tweetList}
