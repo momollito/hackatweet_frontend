@@ -4,8 +4,6 @@ import { Provider } from 'react-redux';
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import tweets from '../reducer/tweets';
 
-import { Provider } from 'react-redux';
-import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import user from '../reducers/user';
 
 import { persistStore, persistReducer } from 'redux-persist';
